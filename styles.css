@@ -1,0 +1,36 @@
+/* Some colors typed in "color names" give errors in
+http://www.css-validator.org/#validate_by_upload because
+by default it does CSS2.1 validation. However CSS3 validation
+works, so leaving the colors as written here and not changing
+values for rgb numbers.
+*/
+
+body {
+    background-color: ivory;
+    color: gray;
+}
+
+h1 {
+    font-size: 35px;
+} 
+
+p {
+    font-size: 16px;
+    background-color: lavender;
+    color: darkblue;
+}  
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.profile-image {
+    border-style: dotted;
+    border-width: 2px;
+    width: 200px;
+    height: 200px;
+}
