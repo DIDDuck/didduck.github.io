@@ -8,11 +8,30 @@ values for rgb numbers.
 body {
     background-color: ivory;
     color: gray;
+    margin: 0px auto;
+    max-width: 960px;
+    font-family: Lato, Carlito, Arial, sans-serif;
 }
 
 h1 {
     font-size: 35px;
-} 
+}
+
+h2 {
+    border: 1px solid rgb(56, 56, 56);
+}
+
+h2.disp-inline-block {
+    display: inline-block;
+    margin-bottom: 0px;   
+}
+
+
+.page {
+    background-image: linear-gradient(rgb(247, 247, 247), rgb(219, 206, 224));
+    border-radius: 10px;
+    padding: 10px;
+}
 
 p {
     font-size: 16px;
@@ -33,4 +52,23 @@ ul {
     border-width: 2px;
     width: 200px;
     height: 200px;
+}
+
+a {
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    border-radius: 4px;    
+}
+
+nav {
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.nav-button {
+    padding: 2px;
+}
+
+#boy {
+    border-radius: 5px;
 }
