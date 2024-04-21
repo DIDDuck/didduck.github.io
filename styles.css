@@ -14,18 +14,49 @@ body {
 }
 
 h1 {
+    color: rgb(90, 90, 90);
     font-size: 35px;
+    padding-left: 5px;
+
 }
 
 h2 {
-    border: 1px solid rgb(56, 56, 56);
+    color: rgb(90, 90, 90);
+    font-size: 24px;
+    border-left: 2px solid rgb(56, 56, 56);
+    border-bottom: 2px solid rgb(56, 56, 56);
 }
 
 h2.disp-inline-block {
     display: inline-block;
-    margin-bottom: 0px;   
+    margin-bottom: 5px;
+    padding-left: 5px;   
 }
 
+h3.job-title,h3.job-info {
+    margin: 1px;
+    padding: 0px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color: rgb(88, 88, 88);
+}
+
+hr {
+    border-top: 1px solid black;
+    border-bottom: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr.line-footer {
+    padding-top: 0px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 
 .page {
     background-image: linear-gradient(rgb(247, 247, 247), rgb(219, 206, 224));
@@ -33,14 +64,38 @@ h2.disp-inline-block {
     padding: 10px;
 }
 
+section {
+    float: left;
+    width: 55%;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+article {
+    padding-top: 5px;
+    padding-bottom: 5px;;
+}
+
+aside {
+    background-color: rgb(230, 213, 236);
+    float: right;
+    width: 40%;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
 p {
     font-size: 16px;
-    background-color: lavender;
+    /*background-color: lavender;*/
     color: darkblue;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }  
 
 ol {
     list-style-type: upper-alpha;
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 ul {
@@ -50,6 +105,7 @@ ul {
 .profile-image {
     border-style: dotted;
     border-width: 2px;
+    border-radius: 5px;
     width: 200px;
     height: 200px;
 }
@@ -69,6 +125,55 @@ nav {
     padding: 2px;
 }
 
+header {
+    background-color: rgb(248, 248, 214);
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+footer {
+    clear: both;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(230, 213, 236);
+    border-radius: 0px 0px 10px 10px;;
+}
+
+footer h4, footer address {
+    padding-left: 5px;
+}
+
+#hooded-coder {
+    border-radius: 5px;
+}
+
 #boy {
     border-radius: 5px;
+}
+
+/* This is to test how to get floating section and aside elements
+on top of each other in narrow screens */
+
+
+@media (max-width: 570px) {
+    
+    .page {
+        padding-right: 10px;
+    }
+
+    section {
+        float: left;
+        width: 100%;
+        padding-right: 10px;        
+    }
+    
+    aside {
+        float: left;
+        width: calc(100% - 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+    }    
 }
