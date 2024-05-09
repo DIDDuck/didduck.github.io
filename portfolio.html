@@ -8,8 +8,14 @@
 </head>
 
 <body>
-    <header>
-        <h1>MyPortfolio</h1>
+    <header class="portfolio">
+        <div class="header-lines">
+            <h1>My Portfolio</h1>
+            <h4>Some projects of mine</h4>
+        </div>
+        <div class="header-image header-image-coffee">
+			<img id="coffee-laptop-img" src="image/coffee_laptop_small.jpg" alt="Mug of coffee and a laptop">
+		</div>
     </header>
     <div class="page">
         <nav>
@@ -17,37 +23,76 @@
             <a class="nav-button" href="portfolio.html">Portfolio</a>
             <a class="nav-button" href="#contact">Contact</a>
         </nav>
-        <div>
-            <!--<img src="noimage.jpg" alt="Image element without image...">-->
-            <figure>
-                <img id="boy" src="image/boy_computer_small.jpg" title="Me on a computer"
-                    alt="Boy working on a computer">
-                <figcaption>That's me working on a computer.</figcaption>
-            </figure>
-        </div>
-        <h2 class="disp-inline-block">Interest and Projects</h2>
-        <div>
+
+        <section>
+            <h2 class="disp-inline-block">Projects</h2>
             <p>
                 My interests at the moment are mostly tech and sports related. Here are some "projects"
-                (if you want to call them projects) that I've been lately playing with:
-            <ul>
-                <li>Own NAS server</li>
-                <li>Learning how to use Virtualbox in command line</li>
-                <li>Studying basics of coding</li>
-                <li>Some neverending bicycle building/modifying projects</li>
-            </ul>
-        </div>
-        <h2 class="disp-inline-block">My Skill Level in HTML/CSS</h2>
-        <p><label>Beginner <progress value="5" max="100">5 %</progress> Nobody will ever be here</label></p>
-        <br>
+                (if you want to call them projects) that I've been lately playing with:</p>
 
-        <footer id="contact">
-            <hr class="footer">
-            <h4>Contact:</h4>
-            <address>Homestreet 5, 12345 City, Finland<br>
-                <a href="mailto:firstname.lastname@example.com">firstname.lastname@example.com</a>
-            </address>
-        </footer>
+            <article>
+                <div class="left">
+                    <h3 class="years">2024 -</h3>
+                </div>
+                <div class="right">
+                    <h3 class="first-line">Learning how to use Virtualbox in command line</h3>
+                    <p>Description of job... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit voluptates voluptas ea ducimus blanditiis.
+                    <a href="" class="project-link">"Link to project if available"</a></p>
+                </div>
+            </article><article>
+                <div class="left">
+                    <h3 class="years">2023 -</h3>
+                </div>
+                <div class="right">
+                    <h3 class="first-line">Studying basics of coding</h3>
+                    <p>Description of job... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit voluptates voluptas ea ducimus blanditiis.
+                        <a href="" class="project-link">"Link to project if available"</a></p>
+                </div>
+            </article>
+            <article>
+                <div class="left">
+                    <h3 class="years">2023</h3>
+                </div>
+                <div class="right">
+                    <h3 class="first-line">Own NAS Server</h3>
+                    <p>Description of job... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit voluptates voluptas ea ducimus blanditiis.
+                        <a href="" class="project-link">"Link to project if available"</a></p>
+                </div>
+            </article>
+            <article>
+                <div class="left">
+                    <h3 class="years">2012 -</h3>
+                </div>
+                <div class="right">
+                    <h3 class="first-line">Some neverending bicycle building/modifying projects</h3>
+                    <p>Description of job... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit voluptates voluptas ea ducimus blanditiis.
+                        <a href="" class="project-link">"Link to project if available"</a></p>
+                </div>
+            </article>           
+        </section>
+
+        <aside>
+            <div>
+                <figure class="aside-figure">
+                    <img id="boy" src="image/boy_computer_small.jpg" title="Me on a computer" alt="Boy working on a computer">
+                    <figcaption>That's me working on a computer.</figcaption>
+                </figure>
+            </div>
+            <footer id="contact">
+                
+                <h2 class="disp-inline-block">Contact:</h2>
+                <address>
+                    <img src="image/home.svg" alt="Home icon">Homestreet 5, 12345 City, Finland<br>
+                    <img src="image/telephone.svg" alt="Telephone icon">012 3456 7890<br>
+                    <img src="image/mobile.svg" alt="Mobile phone icon">06 1234 5678<br>
+                    <img src="image/email.svg" alt="Envelope icon"><a href="mailto:firstname.lastname@example.com">firstname.lastname@example.com</a>
+                </address>
+            </footer>
+        </aside>
     </div>
 </body>
 

@@ -1,15 +1,10 @@
-/* Some colors typed in "color names" give errors in
-http://www.css-validator.org/#validate_by_upload because
-by default it does CSS2.1 validation. However CSS3 validation
-works, so leaving the colors as written here and not changing
-values for rgb numbers.
-*/
+/* Validated using https://jigsaw.w3.org/css-validator/validator (CSS3 + SVG)*/
 
 body {
     background-color: ivory;
     color: gray;
     margin: 0px auto;
-    max-width: 960px;
+    max-width: 860px;
     font-family: Lato, Carlito, Arial, sans-serif;
 }
 
@@ -17,6 +12,28 @@ h1 {
     color: rgb(90, 90, 90);
     font-size: 35px;
     padding-left: 5px;
+
+}
+
+div.header-lines>h1 {
+    font-style: italic;
+    margin: 0px;
+
+}
+
+div.header-lines>h4 {
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    font-style: italic;
+}
+
+div.header-lines {
+    float: left;
+    width: 220px;
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
 
 }
 
@@ -44,6 +61,11 @@ h4 {
     color: rgb(88, 88, 88);
 }
 
+h4.job-title {
+    color: gray;
+    margin-bottom: 0px;
+}
+
 hr {
     border-top: 1px solid black;
     border-bottom: none;
@@ -59,55 +81,144 @@ hr.line-footer {
 }
 
 .page {
+    overflow: auto;
+    clear: both;
     background-image: linear-gradient(rgb(247, 247, 247), rgb(219, 206, 224));
     border-radius: 10px;
     padding: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 section {
     float: left;
-    width: 55%;
+    width: 52%;
+    padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 15px;
 }
 
 article {
     padding-top: 5px;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;    
 }
 
-aside {
-    background-color: rgb(230, 213, 236);
-    float: right;
-    width: 40%;
-    padding-left: 10px;
-    border-radius: 10px;
+article div.left {
+    float: left;
+    width: 30%;
 }
+
+article div.right {
+    float: left;
+    width: 70%;
+}
+
+article div.right h3.first-line {
+    margin-bottom: 0px;
+}
+
+article div.right p {
+    margin-top: 0px;
+}
+
+article a.project-link {
+    text-decoration: none;
+    background-color: unset;
+    border: none;
+    color: darkblue;
+    font-style: italic;
+}
+
+article a.project-link:hover {
+    color: forestgreen;
+}
+aside {
+    float: right;
+    width: 42%;   
+}
+
+.interests,.skills {
+    background-color: rgb(230, 213, 236);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skills h3 {
+    margin-bottom: 8px;
+}
+
 
 p {
     font-size: 16px;
-    /*background-color: lavender;*/
     color: darkblue;
     margin-top: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }  
-
-ol {
-    list-style-type: upper-alpha;
-    margin-top: 5px;
-    font-size: 18px;
-}
 
 ul {
     list-style-type: square;
+    margin-top: 8px;
 }
 
-.profile-image {
-    border-style: dotted;
-    border-width: 2px;
-    border-radius: 5px;
-    width: 200px;
-    height: 200px;
+.skills ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    
+}
+
+/* PROGRESS ELEMENTS */
+.skills progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Firefox/Edge */
+    border: none;
+    background-color: rgb(77, 77, 77);
+    border-radius: 2px;
+
+    width: 100px;
+    height: 10px;
+}
+
+/* For Chrome/Edge */
+.skills progress[value]::-webkit-progress-bar {
+    background-color: rgb(77, 77, 77);
+    border-radius: 2px;
+}
+
+.skills progress[value]::-webkit-progress-value {
+    background-color: rgb(123, 160, 202);
+    border-radius: 2px;
+}
+/* End of Chrome/Edge */
+
+/* For Firefox */
+.skills progress[value]::-moz-progress-bar {
+    background-color: rgb(123, 160, 202);
+    border-radius: 2px;
+}
+/* End of Firefox */
+
+.skills li div {
+    clear: right;
+    float: right;
+    /*width: 35%;*/
+    padding-bottom: 2px;
+    margin-top: -2px;
+}
+/* END OF PROGRESS ELEMENTS */
+
+.header-image {
+    float: right;
+    width: 38%;
+    min-width: 220px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
 }
 
 a {
@@ -117,19 +228,36 @@ a {
 }
 
 nav {
-    padding-bottom: 15px;
+    padding: 10px 10px 15px 10px;
     font-size: 18px;
 }
 
 .nav-button {
     padding: 2px;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+
+.nav-button:hover {
+    color: forestgreen;
+    background-color: rgb(216, 216, 216);
+}
+
+a:visited {
+    color: rgb(26, 87, 26);
 }
 
 header {
+    overflow: auto;
+    height: 170px;
     background-color: rgb(248, 248, 214);
     border-radius: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
@@ -137,16 +265,58 @@ footer {
     padding-top: 0px;
     padding-bottom: 5px;
     margin-top: 5px;
-    background-color: rgb(230, 213, 236);
     border-radius: 0px 0px 10px 10px;;
 }
 
-footer h4, footer address {
+footer#contact {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+footer address {
+    padding-top: 10px;
     padding-left: 5px;
+    font-style: normal;
+    font-size: 15px;
+}
+
+footer address a {
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: gray;
+}
+
+footer address img {
+    width: 15px;
+    padding-right: 5px;
+    margin-bottom: -2px;
+}
+
+footer address a:hover {
+    color: forestgreen;
 }
 
 #hooded-coder {
+    border-radius: 100px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#coffee-laptop-img {
     border-radius: 5px;
+    height: 100px;
+    margin: 0 35% 0 auto;
+}
+
+div.header-image-coffee {
+    display: flex;
+    align-items: center;
+}
+
+div figure {
+    margin-left: 10px;
+    margin-right: 0px;
 }
 
 #boy {
@@ -156,24 +326,71 @@ footer h4, footer address {
 /* This is to test how to get floating section and aside elements
 on top of each other in narrow screens */
 
-
-@media (max-width: 570px) {
+@media (max-width: 760px) {
     
     .page {
-        padding-right: 10px;
+        padding-right: 20px;
     }
 
     section {
         float: left;
-        width: 100%;
+        width: 94%;
         padding-right: 10px;        
     }
     
     aside {
         float: left;
-        width: calc(100% - 20px);
+        max-width: 400px;
+        width: 94%;
         padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 10px;
-    }    
+        padding-right: 0px;
+    } 
+    
+    .skills progress[value] {
+        width: 140px;
+    }
+
+    figure.aside-figure {
+        margin-left: 20px;    
+    }
+
+    #coffee-laptop-img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 510px) {
+    body {
+        min-width: 400px;
+    }
+
+    header {
+        display: block;
+        height: 220px;
+        background-color: rgb(248, 248, 214);
+    }
+
+    div.header-lines {
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    
+    }
+
+    .header-image  {
+        display: block;
+        float: none;
+        width: 150px;
+        min-width: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px auto;
+    }
+
+    div.header-image-coffee {
+        padding: 0px;
+    }
 }
